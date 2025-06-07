@@ -7,98 +7,150 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', sans-serif;
-      background: linear-gradient(to bottom right, #091540, #1b2cc1);
-      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #0a0f24, #1e2c68);
+      color: #e0e0e0;
       text-align: center;
       overflow-x: hidden;
+      background-image: url('https://okilocrypto.github.io/Okilo/BANNER.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.8);
+      min-height: 100vh;
+      padding: 2em;
     }
     .header {
-      padding: 2em;
       font-size: 3em;
       font-weight: bold;
+      margin-top: 1em;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
     }
     .logo {
-      max-width: 200px;
+      max-width: 150px;
       border-radius: 50%;
-      margin-top: 1em;
+      margin: 1em auto;
+      box-shadow: 0 0 15px #00ffff;
     }
     .slogan {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin: 1em 0;
-      background: yellow;
-      color: black;
+      background: #00ffff;
+      color: #000;
       display: inline-block;
       padding: 0.5em 1em;
       border-radius: 8px;
-      animation: pulse 1s infinite;
-    }
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.1); }
-      100% { transform: scale(1); }
     }
     .buy-btn {
-      background-color: #00ff99;
+      background-color: #00ffcc;
       color: #000;
       padding: 1em 2em;
-      font-size: 1.5em;
+      font-size: 1.3em;
       border: none;
-      border-radius: 20px;
+      border-radius: 15px;
       margin-top: 2em;
       cursor: pointer;
       text-decoration: none;
-      display: inline-block;
+      box-shadow: 0 0 10px #00ffff;
     }
     .buy-btn:hover {
-      background-color: #00cc77;
+      background-color: #00ccaa;
     }
     .section {
       margin-top: 3em;
-      padding: 1em;
-    }
-    .img-meme {
-      width: 90%;
-      max-width: 500px;
-      margin-top: 1em;
-      border: 5px solid white;
-      border-radius: 20px;
     }
     .footer {
-      margin-top: 4em;
+      margin-top: 5em;
       font-size: 0.9em;
-      color: #ccc;
+      color: #999;
+    }
+    .glass-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 2em;
+      margin: 2em auto;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      position: relative;
+    }
+    .glass-box::before {
+      content: "";
+      position: absolute;
+      top: -8px; left: -8px; right: -8px; bottom: -8px;
+      border: 2px solid rgba(0, 255, 255, 0.3);
+      border-radius: 16px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+      pointer-events: none;
+      z-index: -1;
+    }
+    .notification-box {
+      background: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      max-width: 500px;
+      margin: 2em auto;
+      padding: 2em;
+      box-shadow: 0 0 30px #00ffff;
+      text-align: left;
+      color: #00ffff;
+      font-family: 'Courier New', monospace;
+    }
+    .notification-box h3 {
+      color: #00ffff;
+      margin-bottom: 1em;
+      border-bottom: 1px solid #00ffff;
+      padding-bottom: 0.5em;
+    }
+    .notification-box p {
+      color: #fff;
+    }
+    .check-icon {
+      font-size: 2em;
+      color: #00ff99;
+      text-align: center;
+      margin-top: 1em;
     }
   </style>
 </head>
 <body>
-  <div class="header">
-    $OKILO
+  <div class="overlay">
+    <div class="header">$OKILO</div>
     <img class="logo" src="https://okilocrypto.github.io/Okilo/LOGO.png" alt="$OKILO logo" />
-    <div class="slogan">Stand up, or stay broke 💪</div>
-  </div>
-  <div class="section">
-    <h2>What is $OKILO?</h2>
-    <p>
-      Not just a meme coin. It’s a movement. From rock bottom to peak form.
-      OKILO is the stand-up token for those who refuse to stay down.
-    </p>
-    <img class="img-meme" src="https://okilocrypto.github.io/Okilo/BANNER.png" alt="OKILO Meme" />
-  </div>
-  <div class="section">
-    <a class="buy-btn" href="https://pump.fun/yourtokenlink" target="_blank">Buy Now on Pump.fun</a>
-  </div>
-  <div class="section">
-    <h2>Join the Quest</h2>
-    <p>Complete missions. Earn airdrops. Meme your way to the top.</p>
-    <p>
-      <a style="color: yellow; text-decoration: underline;" href="https://t.me/+c2prS-RH_sVjZTU1" target="_blank">Join our Telegram</a>
-    </p>
-  </div>
-  <div class="footer">
-    © 2025 OKILO Coin. Made by those who stood up.
+    <div class="slogan">Rise Alone. Upgrade Forever.</div>
+
+    <div class="notification-box">
+      <h3>⚠️ NOTIFICATION</h3>
+      <p>[Secret Quest Unlocked]</p>
+      <p><em>"Courage of the Weak"</em></p>
+      <div class="check-icon">✅</div>
+    </div>
+
+    <div class="glass-box">
+      <h2>What is $OKILO?</h2>
+      <p>
+        From the bottom of the crypto abyss, a Player awakens.<br>
+        OKILO isn’t just a coin — it’s your rebirth.<br>
+        Stand up, grind missions, unlock airdrops, and upgrade yourself.
+      </p>
+      <a class="buy-btn" href="https://pump.fun/yourtokenlink" target="_blank">Buy Now on Pump.fun</a>
+    </div>
+
+    <div class="glass-box">
+      <h2>Join the Quest</h2>
+      <p>Enter the dungeon of memes. Complete challenges. Earn loot. Become legend.</p>
+      <p><a style="color: #00ffff; text-decoration: underline;" href="https://t.me/+c2prS-RH_sVjZTU1" target="_blank">Join our Telegram</a></p>
+    </div>
+
+    <div class="footer">
+      © 2025 OKILO Coin. Awakened by the ones who refused to stay down.
+    </div>
   </div>
 </body>
 </html>
+
 
 Add OKILO homepage
