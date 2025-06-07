@@ -95,6 +95,36 @@
       max-width: 90%;
       line-height: 1.6em;
     }
+    .stat-box {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      padding: 1.5em;
+      margin: 2em auto;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00ffff;
+      color: #00ffff;
+      font-family: 'Courier New', monospace;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    .stat {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 1em;
+      font-size: 1.2em;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    .stat-title {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: #00ffff;
+    }
     @media screen and (max-width: 600px) {
       .header {
         font-size: 2em;
@@ -105,6 +135,9 @@
       .buy-btn {
         font-size: 1.1em;
         padding: 0.8em 1.5em;
+      }
+      .stat-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   </style>
@@ -123,6 +156,52 @@
         Stand up, grind missions, unlock airdrops, and upgrade yourself.
       </p>
       <a class="buy-btn" href="https://pump.fun/coin/2VA8FS8Bpd2haBVQQ6gB2AghsCansFBakxc7bqU1pump" target="_blank">Buy Now on Pump.fun</a>
+    </div>
+
+    <div class="stat-box">
+      <h3>🧬 PLAYER STATUS</h3>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-title">HP</div>
+          100 / 100
+        </div>
+        <div class="stat">
+          <div class="stat-title">MP</div>
+          10 / 10
+        </div>
+        <div class="stat">
+          <div class="stat-title">FATIGUE</div>
+          0
+        </div>
+        <div class="stat">
+          <div class="stat-title">STR</div>
+          19
+        </div>
+        <div class="stat">
+          <div class="stat-title">AGI</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">PER</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">VIT</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">INT</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">Points</div>
+          3
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 OKILO Coin. Awakened by the ones who refused to stay down.
     </div>
   </div>
 </body>
