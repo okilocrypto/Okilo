@@ -51,10 +51,13 @@
       font-size: 1.3em;
       border: none;
       border-radius: 15px;
-      margin-top: 2em;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
       cursor: pointer;
       text-decoration: none;
       box-shadow: 0 0 10px #00ffff;
+      display: inline-block;
+      max-width: 90%;
     }
     .buy-btn:hover {
       background-color: #00ccaa;
@@ -87,62 +90,22 @@
       pointer-events: none;
       z-index: -1;
     }
-    .notification-box {
-      background: rgba(0, 0, 0, 0.6);
-      border: 2px solid #00ffff;
-      border-radius: 12px;
-      max-width: 500px;
-      margin: 2em auto;
-      padding: 2em;
-      box-shadow: 0 0 30px #00ffff;
-      text-align: left;
-      color: #00ffff;
-      font-family: 'Courier New', monospace;
+    .glass-box p {
+      margin: 1em auto;
+      max-width: 90%;
+      line-height: 1.6em;
     }
-    .notification-box h3 {
-      color: #00ffff;
-      margin-bottom: 1em;
-      border-bottom: 1px solid #00ffff;
-      padding-bottom: 0.5em;
-    }
-    .notification-box p {
-      color: #fff;
-    }
-    .check-icon {
-      font-size: 2em;
-      color: #00ff99;
-      text-align: center;
-      margin-top: 1em;
-    }
-    .stat-box {
-      background: rgba(0, 0, 0, 0.7);
-      border: 2px solid #00ffff;
-      border-radius: 12px;
-      padding: 1.5em;
-      margin: 2em auto;
-      max-width: 600px;
-      box-shadow: 0 0 20px #00ffff;
-      color: #00ffff;
-      font-family: 'Courier New', monospace;
-    }
-    .stat-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5em;
-      margin-top: 1em;
-    }
-    .stat {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      padding: 1em;
-      font-size: 1.2em;
-      color: #ffffff;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-    }
-    .stat-title {
-      font-weight: bold;
-      margin-bottom: 0.5em;
-      color: #00ffff;
+    @media screen and (max-width: 600px) {
+      .header {
+        font-size: 2em;
+      }
+      .slogan {
+        font-size: 1em;
+      }
+      .buy-btn {
+        font-size: 1.1em;
+        padding: 0.8em 1.5em;
+      }
     }
   </style>
 </head>
@@ -152,55 +115,6 @@
     <img class="logo" src="https://okilocrypto.github.io/Okilo/LOGO.png" alt="$OKILO logo" />
     <div class="slogan">Rise Alone. Upgrade Forever.</div>
 
-    <div class="notification-box">
-      <h3>⚠️ NOTIFICATION</h3>
-      <p>[Secret Quest Unlocked]</p>
-      <p><em>"Courage of the Weak"</em></p>
-      <div class="check-icon">✅</div>
-    </div>
-
-    <div class="stat-box">
-      <h3>🧬 PLAYER STATUS</h3>
-      <div class="stat-grid">
-        <div class="stat">
-          <div class="stat-title">HP</div>
-          100 / 100
-        </div>
-        <div class="stat">
-          <div class="stat-title">MP</div>
-          10 / 10
-        </div>
-        <div class="stat">
-          <div class="stat-title">FATIGUE</div>
-          0
-        </div>
-        <div class="stat">
-          <div class="stat-title">STR</div>
-          19
-        </div>
-        <div class="stat">
-          <div class="stat-title">AGI</div>
-          10
-        </div>
-        <div class="stat">
-          <div class="stat-title">PER</div>
-          10
-        </div>
-        <div class="stat">
-          <div class="stat-title">VIT</div>
-          10
-        </div>
-        <div class="stat">
-          <div class="stat-title">INT</div>
-          10
-        </div>
-        <div class="stat">
-          <div class="stat-title">Available Points</div>
-          3
-        </div>
-      </div>
-    </div>
-
     <div class="glass-box">
       <h2>What is $OKILO?</h2>
       <p>
@@ -209,16 +123,6 @@
         Stand up, grind missions, unlock airdrops, and upgrade yourself.
       </p>
       <a class="buy-btn" href="https://pump.fun/coin/2VA8FS8Bpd2haBVQQ6gB2AghsCansFBakxc7bqU1pump" target="_blank">Buy Now on Pump.fun</a>
-    </div>
-
-    <div class="glass-box">
-      <h2>Join the Quest</h2>
-      <p>Enter the dungeon of memes. Complete challenges. Earn loot. Become legend.</p>
-      <p><a style="color: #00ffff; text-decoration: underline;" href="https://t.me/+c2prS-RH_sVjZTU1" target="_blank">Join our Telegram</a></p>
-    </div>
-
-    <div class="footer">
-      © 2025 OKILO Coin. Awakened by the ones who refused to stay down.
     </div>
   </div>
 </body>
