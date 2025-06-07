@@ -114,6 +114,36 @@
       text-align: center;
       margin-top: 1em;
     }
+    .stat-box {
+      background: rgba(0, 0, 0, 0.7);
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      padding: 1.5em;
+      margin: 2em auto;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00ffff;
+      color: #00ffff;
+      font-family: 'Courier New', monospace;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5em;
+      margin-top: 1em;
+    }
+    .stat {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 1em;
+      font-size: 1.2em;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    .stat-title {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+      color: #00ffff;
+    }
   </style>
 </head>
 <body>
@@ -127,6 +157,48 @@
       <p>[Secret Quest Unlocked]</p>
       <p><em>"Courage of the Weak"</em></p>
       <div class="check-icon">✅</div>
+    </div>
+
+    <div class="stat-box">
+      <h3>🧬 PLAYER STATUS</h3>
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-title">HP</div>
+          100 / 100
+        </div>
+        <div class="stat">
+          <div class="stat-title">MP</div>
+          10 / 10
+        </div>
+        <div class="stat">
+          <div class="stat-title">FATIGUE</div>
+          0
+        </div>
+        <div class="stat">
+          <div class="stat-title">STR</div>
+          19
+        </div>
+        <div class="stat">
+          <div class="stat-title">AGI</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">PER</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">VIT</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">INT</div>
+          10
+        </div>
+        <div class="stat">
+          <div class="stat-title">Available Points</div>
+          3
+        </div>
+      </div>
     </div>
 
     <div class="glass-box">
@@ -151,6 +223,5 @@
   </div>
 </body>
 </html>
-
 
 Add OKILO homepage
